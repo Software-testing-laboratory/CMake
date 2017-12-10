@@ -1,3 +1,9 @@
-cmake_minimum_required (VERSION 2.6)
-project (Calculator)
-add_executable(test_add test_add.cpp)
+project(calculator)
+cmake_minimum_required(VERSION 2.8)
+include(CTest)
+
+enable_testing()
+
+add_subdirectory(src)
+add_subdirectory(test)
+
